@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultati</title>
+    <link rel="stylesheet" href="tetris-dodatno/potrebni fajlovi/bootstrap.min.css">
+    <link rel="stylesheet" href="tetris.css">
+    <script src="tetris-dodatno/potrebni fajlovi/bootstrap.min.js"></script>
+    <script src="tetris-dodatno/potrebni fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="rezultati.js"></script>
+</head>
+<body onload="citanjeRezultata()">
+    <div class="container">
+        <div class="row text-center" id="header-igra">
+            <h1 >TETRIS-REZULTATI</h1>
+        </div>
+        <div class="row row1">
+            
+        <h2>Rezultati</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Redni broj</th>
+                    <th>Ime igrača</th>
+                    <th>Poeni</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+        </div>
+        <div class="row row1">
+            <h2> Vas rezultat</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Poeni</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyIgrac"></tbody>
+    </table>
+        </div>
+        <div class="row row1">
+            <div class="col-md-6 offset-md-3 text-center">
+                <button class="btn btn-warning" onclick="window.location.href = 'tetris-uputstvo.html';">Pocetna</button>
+            </div>
+        </div>    
+    </div>
+    
+</body>
+</html>

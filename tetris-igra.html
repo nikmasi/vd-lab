@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tetris-dodatno/potrebni fajlovi/bootstrap.min.css">
+    <link rel="stylesheet" href="tetris.css">
+    <script src="tetris-dodatno/potrebni fajlovi/bootstrap.min.js"></script>
+    <script src="tetris-dodatno/potrebni fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="igra.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="row text-center" id="header-igra">
+            <h1>TETRIS-IGRA</h1>
+        </div>
+        <div class="row" id="pozadina">
+            <div class="col-xl-3 col-lg-1 col-md-1 col-sm-1">&nbsp;</div>
+            <div class="col-xl-4 col-lg-7 col-md-7 col-sm-7">
+                <div class="left">
+                    <canvas id="tetris" width="300" height="600"></canvas>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                <div class="right">
+                    <br>
+                    <h2 id="score">Score: 0</h2>
+                    <h2 id="nivoTezina">Nivo: lakše</h2>
+                    <h2 id="linije">Linije: 0</h2>
+                    <br>
+                    <canvas id="naredni" width="150" height="140"></canvas>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-1 col-md-1 col-sm-1">&nbsp;</div>
+        </div>
+    </div>
+</body>
+</html>

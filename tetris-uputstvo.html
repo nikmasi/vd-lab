@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tetris-dodatno/potrebni fajlovi/bootstrap.min.css">
+    <link rel="stylesheet" href="tetris.css">
+    <script src="tetris-dodatno/potrebni fajlovi/bootstrap.min.js"></script>
+    <script src="tetris-dodatno/potrebni fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="tetris-uputstvo.js"></script>
+    <title>tetris-uputstvo</title>
+</head>
+<body onload="sakriveno()">
+    <div class="container-fluid" id="container11">
+        <div class="row" id="ceo_ekran">
+          <div class="col-md-6 offset-md-3 text-center" id="btn1">
+            <h1 id="h1_tetris">TETRIS</h1>
+            <button class="btn btn-warning" id="sakrij">Uputstvo</button>
+            <button class="btn btn-warning" id="podesavanja">Podesavanja</button>
+            <button class="btn btn-warning" onclick="igraj()" id="font">Igraj</button>
+            <button class="btn btn-warning" onclick="window.location.href = 'tetris-rezultati.html';" id="font">Rezultati</button>
+        </div>
+        <div class="col-md-6 offset-md-3">
+          <div class="card">
+            <div class="card-body kartica kar active" id="card1">
+                <h5 class="card-title text-center" id="font">Uputstvo za Igru</h5>
+                <p class="card-text" id="font">U igri „Tetris“ igrač koristi tastere da pomera blokove koje padaju sa vrha prostora za igru sa ciljem
+                    da ih složi na način tako da između blokova ostane što manje praznog prostora. Kada se jedan ceo red
+                    popuni, ceo taj red nestaje, a svi kvadratići iznad se spuštaju za jedan nivo i igrač time ostvaruje
+                    poene. Kako tok igre napreduje, blokovi padaju sve brže te igrač ima sve manje vremena za razmišljanje
+                    i slaganje. Kada se blokovi nagomilaju do vrha polja za igru, bez mogućnosti da se novi blok pojavi,
+                    igra je gotova.</p>
+                <br>
+                <button class="btn btn-warning" onclick="sledecaKarta(2)">sledeca</button>
+            </div>
+            <div class="card-body karticaNext kar" id="card2">
+                <h5 class="card-title text-center" id="font">O ovoj igri: </h5>
+                <p class="card-text text-center" id="font">Moguće je odabrati i odgovarajući nivo igre: Lako, Sredjnje i Teško. <br>
+                Takođe je moguće odabrati koji oblici se neće pojavljivati u igri.</p>
+                <p class="card-text" id="font">Mogući oblici:</p>
+                <img src="tetris-dodatno/tetris.png" alt="Tetris shapes" class="center-img" >
+                <br><br>
+                <button class="btn btn-warning" onclick="sledecaKarta(1)">nazad</button>
+                <button class="btn btn-warning" onclick="sledecaKarta(3)">sledeca</button>
+            </div>
+            <div class="card-body karticaNext2 kar" id="card3">
+                <h5 class="card-title text-center" id="font">Saveti za Igru</h5>
+                <p class="card-text" id="font">Saveti za uspešno igranje „Tetrisa“ uključuju planiranje unapred, održavanje ravnog dna i izbegavanje
+                    stvaranja visokih kula. Takođe, korisno je vežbati kako bi se poboljšala brzina i preciznost pri
+                    pomeranju i rotiranju blokova.</p>
+                <br><br>
+                <button class="btn btn-warning" onclick="sledecaKarta(2)">nazad</button>
+            </div>
+        </div>
+            <div class="card">
+              <div class="card-body kartica2">
+                <h5 class="card-title text-center" id="font">Podesavanja igre</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="tezinaSelect" id="font">Izaberi težinu:</label>
+                    <select class="form-control" id="tezinaSelect22">
+                      <option value="lako" id="font">Lako</option>
+                      <option value="srednje" id="font">Srednje</option>
+                      <option value="tesko" id="font">Teško</option>
+                    </select>
+                  </div>
+                </form>
+                <br>
+                <form id="checkboxForm">
+                  <label id="font">Blokovi koji ne ucestvuju:</label><br>
+                  <label><input type="checkbox" name="element" value="0">  <img src="tetris-dodatno/tetris1.png" alt="tetris 1"></label> 
+                  <label><input type="checkbox" name="element" value="1"> <img src="tetris-dodatno/tetris2.png" alt="tetris 2"></label>
+                  <label><input type="checkbox" name="element" value="2"> <img src="tetris-dodatno/tetris3.png" alt="tetris 3"></label>
+                  <label><input type="checkbox" name="element" value="3"> <img src="tetris-dodatno/tetris4.png" alt="tetris 4"></label>
+                  <label><input type="checkbox" name="element" value="4"><img src="tetris-dodatno/tetris5.png" alt="tetris 5"></label>
+                  <label><input type="checkbox" name="element" value="5"> <img src="tetris-dodatno/tetris6.png" alt="tetris 6"></label>
+                  <label><input type="checkbox" name="element" value="6"> <img src="tetris-dodatno/tetris7.png" alt="tetris 7"></label><br>
+              </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

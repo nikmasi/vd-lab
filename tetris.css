@@ -1,0 +1,129 @@
+/*tetris-uputstvo*/
+#container11 {
+    min-height: 950px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(tetris-dodatno/tetris-pozadina2.jpg);
+    background-size:  auto;
+    background-repeat: repeat; 
+    background-color: yellow;
+}
+
+#h1_tetris{
+    color: yellow;
+    font-size: 50px;
+    font-family: Georgia, Helvetica, "Courier New", monospace;
+}
+
+#btn1{
+    top: 370px;
+    position: absolute;
+}
+
+#font{
+    font-family: Georgia, Helvetica, "Courier New", monospace;
+}
+
+.card{
+    padding: 2px;
+    margin: 4px;
+}
+
+.kartica {
+    text-align: center;
+}
+.kar {
+    display: none; 
+    text-align: center;
+}
+.kar.active {
+    display: block; 
+}
+
+
+/* tetris-igra*/
+#header-igra{
+    height: 90px; 
+    text-align: center; 
+    display: table;
+    width: 100%;
+	background-image:  linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url(tetris-dodatno/tetris-image.jpg);
+	background-size: 100%;
+	color: white;
+    background-size: 100% auto;
+    background-repeat: no-repeat; 
+}
+
+.left {
+    flex: 1;
+    max-width: 320px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#pozadina{
+    background-color: #FEF9E7;
+}
+
+#tetris{
+    background-color: white;
+    box-shadow: 0 0 10px 2px lightgrey;
+}
+#naredni{
+    background-color: white;
+    box-shadow: 0 0 10px 2px lightgrey;
+}
+
+/* tetris-rezultati*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    background-color: yellowgreen;
+}
+
+.container{
+    font-family: Georgia, Helvetica, "Courier New", monospace;
+    height: 100%;
+}
+
+.row1{
+    padding: 6px;
+    margin-top: 3px;
+}
+
+#naslov-rezultat{
+    background-color: azure;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
